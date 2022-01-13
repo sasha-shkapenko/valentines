@@ -1,0 +1,109 @@
+body {
+  font-family: Lobster;
+  background-image: repeating-radial-gradient(
+    ellipse at center,
+    #fc00ff,
+    #00dbde /* rgba(63, 94, 251, 1),
+    rgba(252, 70, 107, 1) */
+  );
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/hearts.png);
+  background-size: 600px;
+}
+h1 {
+  margin: 0;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  text-shadow: 5px 5px 15px #558abb;
+  color: #741ec6;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-wrap {
+  position: absolute;
+}
+.btn-wrap:nth-child(2) {
+  top: 70px;
+  left: 100px;
+}
+.btn-wrap:nth-child(3) {
+  bottom: 100px;
+  left: 200px;
+}
+.btn-wrap:nth-child(4) {
+  top: 124px;
+  left: 45%;
+}
+.btn-wrap:nth-child(5) {
+  bottom: 70px;
+  left: 50%;
+}
+.btn-wrap:nth-child(6) {
+  top: 15%;
+  right: 15%;
+}
+.btn-wrap:nth-child(7) {
+  bottom: 20%;
+  right: 10%;
+}
+.btn {
+  position: relative;
+  width: 210px;
+  height: 200px;
+
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+.btn:hover + .img {
+  opacity: 1;
+  z-index: 100;
+}
+.svg {
+  fill: #6503c2;
+}
+.btn-label {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  color: tomato;
+
+  font-size: 36px;
+}
+.img {
+  position: absolute;
+
+  opacity: 0;
+  display: block;
+  z-index: -1;
+
+  transition: 250ms linear;
+}
+.img1 {
+  transform: translate(40%, -40%);
+}
+.img2 {
+  transform: translate(40%, -120%);
+}
+.img4 {
+  transform: translate(-70%, -140%);
+}
+.img5 {
+  transform: translate(-100%, -40%);
+}
+.img6 {
+  transform: translate(-100%, -110%);
+}
